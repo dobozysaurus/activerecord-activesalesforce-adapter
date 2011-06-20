@@ -497,7 +497,7 @@ module ActiveRecord
           ids = []
           result[:deletedRecords].each do |v| 
             ids << v[:id]
-          end
+          end if result[:deletedRecords]
           
           ids
         }      
